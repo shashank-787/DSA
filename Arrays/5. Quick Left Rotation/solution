@@ -1,5 +1,4 @@
-	void reverse(int arr[], int start, int end){
-	    
+	void reverse(int arr[], int start, int end){  
       while(start < end){
 	        int temp = arr[start];
 	        arr[start] = arr[end];
@@ -7,10 +6,10 @@
 	        start++;
 	        end--;
 	    }  
-  }
+  	}
 	
-  void leftRotate(int arr[], int k, int n) { 
-     k=k%n;
+  	void leftRotate(int arr[], int k, int n) { 
+     	k=k%n;
 	   reverse(arr, 0, k-1);
 	   reverse(arr, k, n-1);
 	   reverse(arr, 0, n-1);
